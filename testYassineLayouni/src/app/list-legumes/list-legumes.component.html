@@ -1,0 +1,9 @@
+<h1>Légumes du {{date}}</h1>
+<ul>
+    <ng-container *ngFor="let t of tablegumes">
+      <li><app-legume [legume]="t"></app-legume></li>
+    </ng-container>
+</ul>
+  <p>Donner un prix minimum : </p>
+  <input type="number" [(ngModel)]="min">
+  <p>le nombre de légumes ayant un prix > {{min}} est {{rechercheMin()}}

@@ -1,0 +1,8 @@
+<div [ngClass]="{'frais':legume.frais}">
+<img [src]="legume.image"> 
+{{legume.nom|uppercase}} 
+prix(kg) : {{legume.prix}}
+<input type="checkbox" [checked]="legume.frais" disabled>
+Quantité : <input type="number" [(ngModel)]="qnt"><button (click)="onCalculPrix()">Calculer Prix</button>
+<p>prix : {{prix1}}</p>
+</div>
